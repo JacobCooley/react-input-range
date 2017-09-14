@@ -625,7 +625,7 @@ export default class InputRange extends React.Component {
       const name = isMultiValue ? `${this.props.name}${captialize(key)}` : this.props.name;
 
       return (
-        <input key={key} type="hidden" name={name} value={value} />
+        <input key={key} type="hidden" name={name} id={name} value={value} />
       );
     });
   }
